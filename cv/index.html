@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>S. Ram Kumar — Resume</title>
+<meta name="description" content="Resume of S. Ram Kumar, Senior Technical Architect, PHP / Laravel / Symfony.">
+<style>
+  /* Print-first resume. Light theme on purpose: this is the
+     document that gets printed and parsed by ATS systems. */
+  @page{ size:A4; margin:13mm 14mm; }
+
+  :root{
+    --ink:#111418;
+    --ink-soft:#3d454f;
+    --ink-mute:#5c6673;
+    --rule:#c8cdd4;
+    --accent:#1b4f7a;
+  }
+
+  *{ box-sizing:border-box; }
+
+  html{ -webkit-text-size-adjust:100%; }
+
+  body{
+    margin:0;
+    background:#fff;
+    color:var(--ink);
+    font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size:10.2pt;
+    line-height:1.3;
+  }
+
+  .sheet{ max-width:195mm; margin:0 auto; padding:3mm 8mm; }
+
+  /* ---------- header ---------- */
+  header.top{ text-align:center; border-bottom:1.6pt solid var(--accent); padding-bottom:7pt; margin-bottom:11pt; }
+  h1{
+    margin:0 0 2pt;
+    font-size:20pt;
+    font-weight:700;
+    letter-spacing:.055em;
+    text-transform:uppercase;
+  }
+  .subtitle{
+    margin:0 0 6pt;
+    font-size:10.4pt;
+    font-weight:600;
+    color:var(--accent);
+    letter-spacing:.015em;
+  }
+  .contact{ margin:0; font-size:9.1pt; color:var(--ink-soft); }
+  .contact a{ color:var(--ink-soft); text-decoration:none; }
+  .contact .sep{ color:var(--rule); margin:0 4pt; }
+
+  /* ---------- sections ---------- */
+  section{ margin:0 0 7pt; }
+  h2{
+    margin:0 0 4pt;
+    padding-bottom:2pt;
+    border-bottom:.6pt solid var(--rule);
+    font-size:10.4pt;
+    font-weight:700;
+    letter-spacing:.075em;
+    text-transform:uppercase;
+    color:var(--accent);
+  }
+  p{ margin:0 0 5pt; }
+  .summary{ text-align:justify; color:var(--ink-soft); }
+
+  /* ---------- competencies ---------- */
+  dl.comp{ margin:0; display:grid; grid-template-columns:34mm 1fr; row-gap:2.6pt; column-gap:5pt; }
+  dl.comp dt{ font-weight:700; font-size:9.4pt; }
+  dl.comp dd{ margin:0; font-size:9.4pt; color:var(--ink-soft); }
+
+  /* ---------- experience ---------- */
+  .job{ margin:0 0 6pt; page-break-inside:avoid; break-inside:avoid; }
+  .job:last-child{ margin-bottom:0; }
+  .job-row{ display:flex; justify-content:space-between; align-items:baseline; gap:8pt; }
+  .job-title{ font-weight:700; font-size:10.4pt; }
+  .job-dates{ font-size:9.1pt; color:var(--ink-mute); white-space:nowrap; font-style:italic; }
+  .job-org{ font-size:9.6pt; color:var(--accent); font-weight:600; margin-top:.5pt; }
+  .job-note{ font-size:9.1pt; color:var(--ink-mute); font-style:italic; margin-top:1pt; }
+
+  ul{ margin:3pt 0 0; padding-left:13pt; }
+  li{ margin:0 0 1.8pt; color:var(--ink-soft); }
+
+  /* bullet list that sits directly under a section heading */
+  ul.plain{ margin:0; padding-left:13pt; }
+  ul.plain li{ margin:0 0 2.4pt; }
+
+  /* ---------- projects ---------- */
+  .proj{ margin:0 0 4.5pt; page-break-inside:avoid; break-inside:avoid; }
+  .proj:last-child{ margin-bottom:0; }
+  .proj-name{ font-weight:700; font-size:9.8pt; }
+  .proj p{ margin:.5pt 0 0; font-size:9.1pt; color:var(--ink-soft); }
+  .stack{ font-size:9pt; color:var(--ink-mute); }
+  .stack strong{ color:var(--ink-soft); }
+
+  /* ---------- education ---------- */
+  .edu-row{ display:flex; justify-content:space-between; gap:8pt; margin-bottom:2pt; }
+  .edu-row .d{ font-size:9.1pt; color:var(--ink-mute); white-space:nowrap; font-style:italic; }
+  .tools{ font-size:9.4pt; color:var(--ink-soft); margin-top:3pt; }
+
+  /* keep headings attached to their content */
+  h2{ page-break-after:avoid; break-after:avoid; }
+
+  /* on-screen niceties only; never affects the PDF */
+  @media screen{
+    body{ background:#eceef1; padding:24px 12px; }
+    .sheet{ background:#fff; box-shadow:0 2px 14px rgba(0,0,0,.14); border-radius:3px; }
+  }
+</style>
+</head>
+<body>
+<div class="sheet">
+
+  <header class="top">
+    <h1>S. Ram Kumar</h1>
+    <p class="subtitle">Senior Technical Architect &middot; PHP / Laravel / Symfony</p>
+    <p class="contact">
+      +91 9944336491
+      <span class="sep">|</span>
+      <a href="mailto:enggram@gmail.com">enggram@gmail.com</a>
+      <span class="sep">|</span>
+      <a href="https://www.linkedin.com/in/enggram/">linkedin.com/in/enggram</a>
+      <span class="sep">|</span>
+      <a href="https://enggram.github.io/">enggram.github.io</a>
+      <span class="sep">|</span>
+      Chennai, India
+    </p>
+  </header>
+
+  <section>
+    <h2>Professional Summary</h2>
+    <p class="summary">
+      Results-driven Technical Lead and Architect with <strong>15+ years</strong> of experience
+      designing, developing and delivering scalable web applications using PHP 8.x, Laravel
+      (up to v11) and Symfony. Skilled in leading cross-functional teams, architecting RESTful
+      APIs, integrating third-party services and optimising backend performance. Proven track
+      record in VAT and compliance-based systems, product maintenance, and implementing secure,
+      high-performance solutions aligned with business objectives. Works AI-assisted and
+      spec-driven development into day-to-day delivery, cutting development time on recent
+      feature work by approximately 50%.
+    </p>
+  </section>
+
+  <section>
+    <h2>Core Competencies</h2>
+    <dl class="comp">
+      <dt>Backend</dt>
+      <dd>PHP 5.x&ndash;8.x, Laravel 6&ndash;11, Symfony 1.4&ndash;5.x, CodeIgniter, Shell</dd>
+
+      <dt>APIs &amp; Architecture</dt>
+      <dd>RESTful API development, Microservices, Eloquent ORM, Doctrine ORM, System design</dd>
+
+      <dt>Databases</dt>
+      <dd>MySQL, PostgreSQL, MSSQL, SQL optimisation, Redis, Solr Search</dd>
+
+      <dt>Front End</dt>
+      <dd>HTML, CSS, JavaScript, jQuery, Ajax, Bootstrap, AngularJS, Vue.js</dd>
+
+      <dt>Cloud &amp; DevOps</dt>
+      <dd>AWS (EC2, S3, Load Balancer), Docker, Linux, CI/CD, Git, SVN, Bitbucket</dd>
+
+      <dt>Integrations</dt>
+      <dd>Payment gateways, Twilio, SendGrid, Mailchimp, SSO</dd>
+
+      <dt>Practice</dt>
+      <dd>PHPUnit, Jira, Agile/Scrum, Team leadership, Mentoring, Code review, Estimation</dd>
+
+      <dt>AI-Assisted Dev</dt>
+      <dd>AWS Kiro, GitHub Copilot, PhpStorm AI Assistant, spec-driven development, vibe coding</dd>
+    </dl>
+  </section>
+
+  <section>
+    <h2>AI-Assisted Development</h2>
+    <ul class="plain">
+      <li>
+        Use <strong>AWS Kiro</strong>, <strong>GitHub Copilot</strong> and <strong>PhpStorm's
+        built-in AI Assistant</strong> daily as part of the standard delivery workflow.
+      </li>
+      <li>
+        Apply <strong>spec-driven development</strong> for requirement-backed feature work &mdash;
+        authoring the spec, reviewing the plan, then driving implementation from it &mdash; and
+        <strong>vibe coding</strong> for prototypes, spikes and exploratory work.
+      </li>
+      <li>
+        Reduced development time by <strong>approximately 50%</strong> on recent feature work, with
+        gains in spec-to-code turnaround, refactoring confidence and documentation currency, while
+        retaining ownership of architecture review, scope decisions and production releases.
+      </li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Professional Experience</h2>
+
+    <div class="job">
+      <div class="job-row">
+        <span class="job-title">Senior PHP Laravel Developer</span>
+        <span class="job-dates">May 2021 &ndash; Present</span>
+      </div>
+      <div class="job-org">Fintua &mdash; Bangalore, India</div>
+      <div class="job-note">Vault &amp; Recover &mdash; VAT return platform for preparing, validating and filing VAT returns</div>
+      <ul>
+        <li>Lead a team of 2 backend developers, 1 QA and 1 frontend developer across the product lifecycle.</li>
+        <li>Build and maintain the Vault and Recover VAT return products using Laravel 11 and PHP 8.2.</li>
+        <li>Design and implement RESTful APIs and integrate Document Tracker, Data Uploader and SSO.</li>
+        <li>Own system scalability, compliance validation rules and query performance for VAT return reporting.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-row">
+        <span class="job-title">Senior Technical Architect</span>
+        <span class="job-dates">Jul 2017 &ndash; Apr 2021</span>
+      </div>
+      <div class="job-org">U Software Systems Pvt. Ltd &mdash; Chennai, India</div>
+      <ul>
+        <li>Architected enterprise-level solutions using Symfony 3.x and Laravel.</li>
+        <li>Implemented CI/CD pipelines that measurably improved deployment efficiency.</li>
+        <li>Led cloud migration work and enforced modern coding standards across teams.</li>
+        <li>Mentored developers and ran technical reviews as the team scaled.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-row">
+        <span class="job-title">Senior Technical Architect</span>
+        <span class="job-dates">Nov 2015 &ndash; Jul 2017</span>
+      </div>
+      <div class="job-org">Expian Technologies Pvt. Ltd &mdash; Bangalore, India</div>
+      <ul>
+        <li>Designed large-scale web solutions on Symfony and Laravel.</li>
+        <li>Implemented microservice architectures and REST APIs for distributed systems.</li>
+        <li>Set the architecture direction for multi-team product work.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-row">
+        <span class="job-title">Senior Symfony Developer</span>
+        <span class="job-dates">Sep 2011 &ndash; Sep 2015</span>
+      </div>
+      <div class="job-org">Como Technology Solutions Pvt. Ltd &mdash; Chennai, India</div>
+      <ul>
+        <li>Developed complex enterprise applications using Symfony 2.x, Doctrine ORM and MySQL.</li>
+        <li>Integrated Mailchimp, Twilio, SendGrid and multiple payment gateways.</li>
+        <li>Delivered tourism, job portal and consumer platforms for international clients.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-row">
+        <span class="job-title">Senior Software Engineer</span>
+        <span class="job-dates">Mar 2010 &ndash; Sep 2011</span>
+      </div>
+      <div class="job-org">Arokia IT Pvt. Ltd &mdash; Bangalore, India</div>
+      <ul>
+        <li>Developed and maintained PHP-based applications with strong front-end integration.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-row">
+        <span class="job-title">Software Engineer</span>
+        <span class="job-dates">Nov 2008 &ndash; Mar 2010</span>
+      </div>
+      <div class="job-org">Micro Village Softech Pvt. Ltd &mdash; Bangalore, India</div>
+      <ul>
+        <li>Built and maintained business applications using PHP and MySQL.</li>
+      </ul>
+    </div>
+
+  </section>
+
+  <section>
+    <h2>Key Projects</h2>
+
+    <div class="proj">
+      <div class="proj-name">Fintua &mdash; Vault &amp; Recover</div>
+      <p>
+        VAT return platform with Analytics, Compliance and Document Tracker built in. Clients file
+        VAT bills and receive returns based on the bills uploaded, with transaction-level rule
+        checks on every return and full traceability on documents sent.
+      </p>
+      <p class="stack"><strong>Stack:</strong> Laravel, PHP 8, MSSQL, PostgreSQL, Angular, AWS</p>
+    </div>
+
+    <div class="proj">
+      <div class="proj-name">S/P2 Careers</div>
+      <p>
+        US-based job portal with candidate, company and instructor roles. Companies search resumes
+        and hire; candidates search and apply, with Solr powering the search layer.
+      </p>
+      <p class="stack"><strong>Stack:</strong> LAMP, Symfony 3.4, Solr, Doctrine ORM, MySQL, Redis</p>
+    </div>
+
+    <div class="proj">
+      <div class="proj-name">Rewards</div>
+      <p>
+        Gaming giveaway platform that reached 2 million unique views following its January 2016
+        launch, built to stay responsive under spiky, campaign-driven traffic.
+      </p>
+      <p class="stack"><strong>Stack:</strong> LAMP, Symfony 2.7, Vue.js, Doctrine ORM, MySQL, Redis</p>
+    </div>
+
+    <div class="proj">
+      <div class="proj-name">VisitCanberra</div>
+      <p>
+        Official tourism website for Canberra, Australia, offering accommodation booking through a
+        BOOKEASY API integration alongside editorial features such as Inspire Me and What's On.
+      </p>
+      <p class="stack"><strong>Stack:</strong> LAMP, Symfony 2.3, AngularJS, Doctrine ORM</p>
+    </div>
+
+    <div class="proj">
+      <div class="proj-name">TPSE &mdash; Tourism Platform</div>
+      <p>
+        Platform for building tourism applications from 20+ pre-defined CMS block bundles with its
+        own bundle versioning system. Any block can be overridden as a separate bundle to expose
+        additional settings, all configurable by administrators from the CMS.
+      </p>
+      <p class="stack"><strong>Stack:</strong> LAMP, Symfony 2.6, Doctrine ORM, AngularJS, REST web services</p>
+    </div>
+
+  </section>
+
+  <section>
+    <h2>Education &amp; Certifications</h2>
+    <div class="edu-row">
+      <span><strong>B.E. Computer Science and Engineering</strong> &mdash; Anna University, Madurai &middot; 73.16%</span>
+      <span class="d">2007</span>
+    </div>
+    <div class="edu-row">
+      <span><strong>MBA (Systems)</strong> &mdash; Correspondence</span>
+    </div>
+    <p class="tools">
+      <strong>Certifications &amp; tools:</strong>
+      Jira &middot; Docker &middot; AWS &middot; Solr Search &middot; PHPUnit &middot; Agile/Scrum
+      methodology &middot; Payment gateways &middot; Mailchimp &middot; SendGrid &middot; Twilio
+      &middot; SSO integrations
+    </p>
+  </section>
+
+</div>
+</body>
+</html>
